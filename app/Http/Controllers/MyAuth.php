@@ -12,7 +12,7 @@ class MyAuth extends Controller
     function login_view(){
         return view('login');
     }
-
+    
     function login_process(Request $req){
         $req->validate([
         'email' => 'required|email',
